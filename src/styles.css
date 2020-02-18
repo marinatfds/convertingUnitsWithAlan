@@ -22,8 +22,9 @@
   font-family: "Comic Sans MS";
   padding: 10px;
   width: 250px;
-  background-color: #123456;
+  background-color: rgba(173, 216, 230, 0.459);
   color: #ffffff;
+  margin-left: 10px;
 }
 
 table {
@@ -32,4 +33,16 @@ table {
   margin: 20px auto;
   width: 100%;
   border-collapse: 0px;
+}
+
+.tr1 {
+  background-color: rgba(173, 216, 230, 0.459);
+}
+
+.tr2 {
+  background-color: #123456;
+}
+
+body {
+  cursor: crosshair;
 }

@@ -36,6 +36,10 @@ export default function App() {
     []
   );
 
+  const reset = React.useCallback(function() {
+    setColorConverted({});
+  }, []);
+
   const keyDownHandler = React.useCallback(
     function(event) {
       // const { value } = event.target;
@@ -67,10 +71,11 @@ export default function App() {
           // value={colorToConvert}
         />
         <Button onClick={convert}>Convert!</Button>
+        <Button onClick={reset}>Reset</Button>
       </div>
       <div>
         <table>
-          <tr>
+          <tr className="tr1">
             <td>In Kilometers:</td>
             <td>{colorConverted.km} km</td>
           </tr>
@@ -78,7 +83,7 @@ export default function App() {
             <td>In Hectometers:</td>
             <td>{colorConverted.hm} hm</td>
           </tr>
-          <tr>
+          <tr className="tr1">
             <td>In Decameters:</td>
             <td>{colorConverted.dam} dam</td>
           </tr>
@@ -86,7 +91,7 @@ export default function App() {
             <td>In Decimeters:</td>
             <td>{colorConverted.dm} dm</td>
           </tr>
-          <tr>
+          <tr className="tr1">
             <td>In Centimeters:</td>
             <td>{colorConverted.cm} cm</td>
           </tr>
@@ -94,7 +99,7 @@ export default function App() {
             <td>In Milimeters:</td>
             <td>{colorConverted.mm} mm</td>
           </tr>
-          <tr>
+          <tr className="tr1">
             <td>In Inches:</td>
             <td>{colorConverted.in} in</td>
           </tr>
