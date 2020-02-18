@@ -1,0 +1,35 @@
+.app {
+  background-color: #123456;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.result {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.button {
+  padding: 10px;
+  font-family: "Comic Sans MS";
+  background-color: #123456;
+  color: #ffffff;
+}
+
+.input {
+  font-family: "Comic Sans MS";
+  padding: 10px;
+  width: 250px;
+  background-color: #123456;
+  color: #ffffff;
+}
+
+table {
+  text-align: center;
+  table-layout: fixed;
+  margin: 20px auto;
+  width: 100%;
+  border-collapse: 0px;
+}
